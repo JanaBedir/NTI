@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task CRUD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>User System</h2>
+
+    <input type="text" id="fname" placeholder="First Name" />
+    <input type="text" id="lname" placeholder="Last Name" />
+    <br /><br />
+
+    <input type="number" id="age" placeholder="Age" />
+
+    <label>
+      <input type="checkbox" id="graduated" />
+      Graduated
+    </label>
+
+    <br /><br />
+
+    <button id="addBtn">Add User</button>
+
+    <hr />
+
+    <input type="text" id="search" placeholder="Search By Name" />
+
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="graduated">Graduated</option>
+      <option value="notGraduated">Not Graduated</option>
+    </select>
+
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Graduated</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody id="tbody"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>
